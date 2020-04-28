@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aksdevopsapp:
+    image: ${DOCKER_REGISTRY-}aksdevopsapp
+    build:
+      context: .
+      dockerfile: AKSDevOpsApp/Dockerfile
